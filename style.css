@@ -1,0 +1,81 @@
+.bg-image {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    color: white;
+    text-align: center;
+}
+.bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 0%, 0.6); /* Semi-transparent overlay */
+}
+.content {
+    position: relative;
+    z-index: 2; /* Ensures the content is above the overlay */
+}
+.equal-height-card {
+display: flex;
+flex-direction: column;
+height: 100%;
+}
+
+.card-body {
+flex-grow: 1; /* Ensure the body takes up the available space */
+}
+
+.card {
+display: flex;
+flex-direction: column;
+height: 100%;
+}
+
+.card-img-top {
+object-fit: cover; /* Makes the image fill the space without distortion */
+height: 482px; /* Adjust the height of the image if needed */
+}
+.skills-icon {
+    font-size: 2.5rem;
+    color: #6c757d; /* Default color for neutral tone */
+    transition: transform 0.3s, color 0.3s;
+}
+
+.skills-icon:hover {
+    transform: scale(1.2);
+    color: #007bff; /* Change color on hover */
+}
+video {  
+    width: 100%;  
+    border-bottom: 5px solid #6d0909; /* Green border */  
+} 
+.card-title {  
+    font-size: 24px;  
+    margin: 15px;  
+    color: #333;    
+}  
+.description {  
+    padding: 15px;  
+    font-size: 16px;  
+    color: #555;  
+    line-height: 1.5;  
+}  
+/* Ensure the progress bars animate */
+.progress-bar {
+    width: 0;
+    transition: width 2s ease-in-out;
+}
